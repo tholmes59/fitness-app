@@ -12,7 +12,11 @@ class Review < ApplicationRecord
     scope :order_by_rating, -> { order("rating desc") }
 
     def self.average_rating
-        average(:rating).round(1)
+      if average(:rating)
+            average(:rating).round(1)
+      else
+        "Not yet rated"
+      end
     end
 
 end
