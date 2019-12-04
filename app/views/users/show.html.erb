@@ -9,7 +9,7 @@
     <p><strong><%= link_to workout.workout_name, workout_path(workout) %></strong><br>
     <%= workout.workout_description %><br>
     by <%= link_to workout.user.username, user_path(workout.user) %> created on <%= workout.date %></p><br>
-    <br>
+    
   <% end %>
 <% else %>
   <p>There are currently no workouts.</p>

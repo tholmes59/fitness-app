@@ -24,9 +24,13 @@
 
 <p>Already have an account with us?</p>
 
-<p>Please login below</p>
+<p>Please login below</p><br>
 
-<%= link_to "Login", login_path, class: "btn btn-primary" %>
+<div><%= link_to "Login", login_path, class: "btn btn-primary" %></div><br>
+
+<div>- or -</div><br>
+
+<div><%= link_to 'Login with Facebook', '/auth/facebook', class: "btn btn-primary" %></div>
 
  
 </div>
